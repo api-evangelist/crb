@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.crossriver.com/get-started/quickstart
+docs: https://docs.crossriver.com/get-started/quickstart
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - clientCredentials
+schemes:
+- name: OAuth2ClientCredentials
+  type: oauth2
+  flow: clientCredentials
+  description: >-
+    Cross River COS API access uses OAuth2 client credentials. Developers
+    register to receive a client id and client secret, exchange them for a
+    bearer access token, and include that token in the Authorization header of
+    each API call. The sandbox is a fully isolated environment with its own
+    credentials.
+  token_delivery: Authorization header (Bearer access token)
+  sources:
+  - https://docs.crossriver.com/get-started/quickstart
+notes: >-
+  Token and authorization endpoint URLs and OAuth scopes are provisioned per
+  partner during onboarding and are not published on the public documentation;
+  no OpenAPI securitySchemes were available to derive them.

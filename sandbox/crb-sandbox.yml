@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.crossriver.com/get-started/quickstart
+docs: https://docs.crossriver.com/get-started/quickstart
+sandbox:
+  available: true
+  description: >-
+    Cross River provides a completely isolated sandbox environment for
+    experimenting with the COS API before going live. The sandbox is accessed
+    with its own OAuth2 client id and client secret, separate from production.
+  access_request: https://crossriver.service-now.com/csm?id=cos_sandbox_request_form
+  isolation: fully isolated from production
+  auth: OAuth2 client credentials (separate sandbox client id/secret)
+  simulation:
+  - name: Inbound ACH origination simulation
+    description: >-
+      A simulation API for inbound ACH origination is documented in the
+      changelog (July 2026), used to trigger inbound ACH scenarios in test.
+    source: https://docs.crossriver.com/changelog
+test_values:
+  note: >-
+    Cross River does not publish static magic test card numbers or fixed test
+    identifiers on its public documentation; sandbox test data is provisioned
+    per onboarded partner. No test values are recorded here to avoid fabrication.

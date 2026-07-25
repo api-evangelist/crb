@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.crossriver.com
+docs: https://docs.crossriver.com/concepts
+conventions:
+  authentication:
+    style: OAuth2 client credentials; Bearer access token in Authorization header
+    detail: authentication/crb-authentication.yml
+  error_handling:
+    documented: true
+    note: >-
+      Cross River publishes product-specific error-code references (cards,
+      wires, instant/card payments) organized by category; see the changelog
+      and Concepts documentation. A structured problem-types catalog was not
+      derivable without an OpenAPI definition.
+    docs: https://docs.crossriver.com/concepts
+  webhooks:
+    supported: true
+    docs: https://docs.crossriver.com
+    note: Cross River documents a webhooks integration surface for event notifications.
+  versioning:
+    scheme: dated changelog
+    docs: https://docs.crossriver.com/changelog
+  idempotency:
+    supported: unknown
+    note: >-
+      No public idempotency-key contract was found in the documentation and no
+      OpenAPI was available to derive one; not asserted.
+  environments:
+    sandbox: fully isolated sandbox with separate OAuth2 credentials
+    detail: sandbox/crb-sandbox.yml

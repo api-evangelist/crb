@@ -1,0 +1,30 @@
+# CRB (Cross River Bank)
+
+> CRB (Cross River Bank) is a New Jersey-chartered, FDIC-insured bank and financial technology infrastructure provider founded in 2008 and headquartered in Fort Lee, New Jersey. Its API-driven core, the Cross River Operating System (COS), lets fintech companies, neobanks, lenders, and platforms embed banking, payments, cards, and lending. Access uses OAuth2 client credentials with an isolated sandbox, Postman collection, webhooks, and a dated changelog.
+
+## APIs
+
+- [Cross River Operating System (COS) API](https://docs.crossriver.com): Accounts and Payments products spanning ACH, RTP, FedNow, wires, international payments, cards, subledgers, and lending.
+
+## Docs
+
+- [Developer Portal](https://docs.crossriver.com)
+- [Getting Started / Quickstart](https://docs.crossriver.com/get-started/quickstart)
+- [Concepts / Documentation](https://docs.crossriver.com/concepts)
+- [Changelog](https://docs.crossriver.com/changelog)
+- [FAQ](https://docs.crossriver.com/faq)
+- [Sandbox access request](https://crossriver.service-now.com/csm?id=cos_sandbox_request_form)
+
+## Artifacts
+
+- [Authentication](authentication/crb-authentication.yml): OAuth2 client credentials profile.
+- [Sandbox](sandbox/crb-sandbox.yml): isolated sandbox environment notes.
+- [Changelog](changelog/crb-changelog.yml): recent dated release entries.
+- [Conventions](conventions/crb-conventions.yml): cross-cutting API semantics.
+- [Domain Security](security/crb-domain-security.yml): probed TLS/HSTS/DNS posture.
+
+## Company
+
+- [Website](https://www.crossriver.com/)
+- [Insights / Blog](https://www.crossriver.com/insights)
+- [Privacy Policy](https://www.crossriver.com/legal/privacy-policy)

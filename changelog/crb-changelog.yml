@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.crossriver.com/changelog
+docs: https://docs.crossriver.com/changelog
+scheme: dated
+window: recent
+entries:
+- date: '2026-07'
+  breaking: false
+  highlights:
+  - Card Controls APIs - renamed velocity control attribute (usage limit to "usagelimit")
+  - Cards documentation added for issuer processor solution, authorization controls, velocity controls, 3DS online authentication, and digital wallet tokenization
+  - Expanded error codes documentation for cards
+  - Accounts/Subledgers - added API to change subledger titles
+  - ACH - introduced simulation API for inbound ACH origination
+  - Reports - added partner reporting pages (transaction master file, daily balance file, dispute/chargeback reporting)
+  - Customer Management - added deactivate customer and update due diligence info APIs
+  - International Payments - added Israel to supported countries
+- date: '2026-06'
+  breaking: false
+  highlights:
+  - International Payments - added Costa Rica and currency limits
+  - Wires - updated APIs for postal address block; enhanced error codes documentation
+  - Instant/Card Payments - reorganized error codes by category
+  - COS Explorer - updated first-time access and organization access documentation
+  - Lending - added web application details and hook registration UI functionality

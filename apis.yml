@@ -1,22 +1,117 @@
 aid: crb
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crb.png
 name: CRB
-description: CRB is a company surfaced as a portfolio company of battery-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CRB (Cross River Bank) is a New Jersey-chartered, FDIC-insured bank and
+  financial technology infrastructure provider founded in 2008 and headquartered
+  in Fort Lee, New Jersey. Cross River pairs a regulated bank with an API-driven
+  core it calls the Cross River Operating System (COS), letting fintech
+  companies, neobanks, lenders, and platforms embed banking, payments, cards,
+  and lending products directly into their applications. Its developer platform
+  exposes Accounts and Payments APIs spanning ACH, RTP, FedNow, wires,
+  international payments, push-to-card, card issuing and processing, subledgers,
+  lending origination, and onchain/stablecoin rails, secured with OAuth2 client
+  credentials and delivered with an isolated sandbox, Postman collection,
+  webhooks, and a dated changelog. Cross River is known for powering leading
+  fintech partners including Stripe, Coinbase, Affirm, Upgrade, and Intuit, and
+  was surfaced in the API Evangelist network as a Battery Ventures portfolio
+  company.
 url: https://raw.githubusercontent.com/api-evangelist/crb/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Banking
+- Banking as a Service
+- Embedded Finance
+- Payments
+- Fintech
+- Lending
+- Cards
+- ACH
+- API
+apis:
+- name: Cross River Operating System (COS) API
+  description: >-
+    The Cross River Operating System (COS) API is Cross River's API-driven bank
+    core, exposing Accounts and Payments products (ACH, RTP, FedNow, wires,
+    international payments, cards, subledgers, and lending) to fintech partners.
+    Access is secured with OAuth2 client credentials and available in an isolated
+    sandbox.
+  humanURL: https://docs.crossriver.com
+  tags:
+  - Banking
+  - Payments
+  - Cards
+  - Lending
+  properties:
+  - type: Documentation
+    url: https://docs.crossriver.com/concepts
+  - type: APIReference
+    url: https://docs.crossriver.com
+  - type: GettingStarted
+    url: https://docs.crossriver.com/get-started/quickstart
+  - type: Authentication
+    url: authentication/crb-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/crb-domain-security.yml
+- type: Website
+  url: https://www.crossriver.com/
+- type: DeveloperPortal
+  url: https://docs.crossriver.com
+- type: Documentation
+  url: https://docs.crossriver.com/concepts
+- type: APIReference
+  url: https://docs.crossriver.com
+- type: GettingStarted
+  url: https://docs.crossriver.com/get-started/quickstart
+- type: Authentication
+  url: authentication/crb-authentication.yml
+- type: Sandbox
+  url: sandbox/crb-sandbox.yml
+- type: Webhooks
+  url: https://docs.crossriver.com
+- type: ChangeLog
+  url: changelog/crb-changelog.yml
+- type: Support
+  url: https://docs.crossriver.com/faq
+- type: Blog
+  url: https://www.crossriver.com/insights
+- type: SignUp
+  url: https://crossriver.service-now.com/csm?id=cos_sandbox_request_form
+- type: PrivacyPolicy
+  url: https://www.crossriver.com/legal/privacy-policy
+- type: Conventions
+  url: conventions/crb-conventions.yml
+- type: LLMsTxt
+  url: llms/crb-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

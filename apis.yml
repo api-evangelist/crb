@@ -48,6 +48,16 @@ tags:
 - Lending
 - Cards
 - ACH
+tags_raw:
+- Company
+- Banking
+- Banking as a Service
+- Embedded Finance
+- Payments
+- Fintech
+- Lending
+- Cards
+- ACH
 - API
 apis:
 - name: Cross River Operating System (COS) API
